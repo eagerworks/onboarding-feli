@@ -1,0 +1,17 @@
+{
+  "name": "css-sass",
+  "version": "1.0.0",
+  "description": "The-Sass-Chapter",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/style.scss up/css/style.css -w"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Felipe-Borras",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
