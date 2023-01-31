@@ -1,0 +1,152 @@
+$colors: (
+  "white": #FFFFFF,
+  "black": #1C1C1C,
+  "gray": #707070,
+);
+
+$color-blue-gradient: (
+
+);
+
+@function get-color ($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$flex: (
+  "flex": flex,
+);
+
+$flex-direction: (
+  "row": row,
+  "col": column,
+  "row-reverse": row-reverse,
+  "column-reverse": column-reverse,
+);
+
+$justify: (
+  "around": space-around,
+  "between": space-between,
+  "center": center,
+);
+
+$items-align: (
+  "center": center,
+  "start": flex-start,
+);
+
+$m-spacings: (
+  "1": 1rem,
+  "2": 6rem,
+  "3": 7rem,
+  "4": 14rem,
+  "5": 22rem,
+  "6": 25rem,
+);
+
+$p-spacings: (
+  "0": 0rem,
+);
+
+$gap-spacings: (
+  "1": 1rem,
+  "2": 2rem,
+  "3": 3rem,
+  "4": 4rem,
+  "5": 6rem,
+  "6": 15rem,
+  "7": 20rem,
+);
+
+$text-size: (
+  "sm": 1.0rem,
+  "base": 1.6rem,
+  "lg": 3.0rem,
+  "xl": 3.5rem,
+  "2xl": 4.8rem,
+  "3xl": 6.0rem,
+);
+
+$font-weights: (
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+);
+
+$text-color: (
+  "white":white,
+  "black":black,
+);
+
+$tracking: (
+  "tighter": -0.05rem,
+  "tight": -0.1rem,
+  "normarl": 0rem,
+);
+
+$leading: (
+  "tight": 108%,
+  "snug": 130%,
+  "normal": 150%,
+);
+
+$text-underline: (
+  "underline": underline,
+  "overline": overline,
+  "line-through": line-through,
+  "no-underline": none,
+);
+
+$w-size: (
+  "0": 0rem,
+  "1": 1.5rem,
+  "2": 3.0rem,
+  "3": 4.0rem,
+  "4": 9.0rem,
+  "5": 9.5rem,
+  "6": 13.0rem,
+  "7": 20.0rem,
+  "8": 22.5rem,
+  "9": 34.5rem,
+  "10": 46.5rem,
+  "11": 58.5rem,
+  "12": 71rem
+);
+
+$h-size: (
+  "0": 0rem,
+  "1": 2.5rem,
+  "2": 3.0rem,
+  "3": 3.6rem,
+  "4": 4.5rem,
+  "5": 7.0rem,
+  "6": 19.5rem,
+  "7": 23.0rem,
+  "8": 27.0rem,
+  "9": 32.0rem,
+);
+
+$rounded: (
+  "none": 0rem,
+  "sm": 0.125rem,
+  "lg": 0.5rem,
+);
+
+$shadow-box: (
+  "none": none,
+  "md": 2px 2px 10px rgba(0, 0, 0, 0.25),
+);
+
+$border: (
+  "none": 0rem,
+);
+
+$bg-color: (
+  "white":white,
+  "black":black,
+);
+
+$list-style: (
+  "none": none,
+);

@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+
+.text-blue-descendent {
+  background: linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-blue-descendent {
+  background: linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%); }
+
+.text-fill-black {
+  -webkit-text-fill-color: #1C1C1C;
+}
+
+@include define-property("", "display", $flex);
+@include define-property ("flex", "flex-direction", $flex-direction);
+@include define-property ("justify", "justify-content", $justify);
+@include define-property ("items", "align-items", $items-align);
+@include define-property ("mt", "margin-top", $m-spacings);
+@include define-property ("mb", "margin-bottom", $m-spacings);
+@include define-property ("ml", "margin-left", $m-spacings);
+@include define-property ("mx", ("margin-left", "margin-right"), $m-spacings);
+@include define-property ("p", "padding", $p-spacings);
+@include define-property ("gap", "gap", $gap-spacings);
+@include define-property ("text", "font-size", $text-size);
+@include define-property ("font", "font-weight", $font-weights);
+@include define-property ("text", "color", $text-color);
+@include define-property ("tracking", "letter-spacing", $tracking);
+@include define-property ("leading", "line-height", $leading);
+@include define-property ("", "text-decoration", $text-underline);
+@include define-property ("w", "width", $w-size);
+@include define-property ("h", "height", $h-size);
+@include define-property ("rounded", "border-radius", $rounded);
+@include define-property ("shadow", "box-shadow", $shadow-box);
+@include define-property ("border", "border", $border);
+@include define-property ("text", "font-size", $text-size);
+@include define-property ("bg", "background-color", $bg-color);
+@include define-property ("list", "list-style", $list-style);

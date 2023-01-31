@@ -4,7 +4,7 @@
   "description": "The-Sass-Chapter",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/style.scss up/css/style.css -w"
+    "sass": "node-sass styles/sass/styles.scss styles/css/styles.css -w"
   },
   "keywords": [
     "sass"
