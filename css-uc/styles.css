@@ -1,0 +1,304 @@
+/* General properties */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #FFFFFF;
+  --blue-gradient: linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%);
+  --black: #1C1C1C;
+  --lightblue-gradient: linear-gradient(46.77deg, #0F99B7 -0.79%, #69ECDC 131.52%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: var(--white);
+  margin-inline: auto;
+  width: 80%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Flex properties*/
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+/* Margins, paddings and gaps */
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-7 {
+  margin-top: 70px;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
+.mt-14 {
+  margin-top: 140px;
+}
+
+.mt-22 {
+  margin-top: 220px;
+}
+
+.p-btn1 {
+  padding: 5px 40px;
+}
+
+.p-btn2 {
+  padding: 9.5px 53px;
+}
+
+.p-btn3 {
+  padding: 8px 40px;
+}
+
+.gap-1 {
+  gap: 10px;
+}
+
+.gap-2 {
+  gap: 20px;
+}
+
+.gap-3 {
+  gap: 30px;
+}
+
+.gap-4 {
+  gap: 40px;
+}
+
+.gap-6 {
+  gap: 60px;
+}
+
+.gap-15 {
+  gap: 150px;
+}
+
+.gap-20 {
+  gap: 200px
+}
+
+/* Lists properties */
+.list-none {
+  list-style: none;
+}
+
+/* Text sizes, colors, align and letter spacing*/
+.text-2xl {
+  font-size: 6.0rem;
+}
+
+.text-xl {
+  font-size: 4.8rem;
+}
+
+.text-lg {
+  font-size: 3.5rem;
+}
+
+.text-sm {
+  font-size: 3.0rem;
+}
+
+.text-base {
+  font-size: 1.6rem;
+}
+
+.tracking-tight {
+  letter-spacing: -1px;
+}
+
+.leading-tight {
+  line-height: 108%;
+}
+
+.leading-snug {
+  line-height: 130%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-blue-descendent {
+  background: var(--blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-fill-black {
+  -webkit-text-fill-color: var(--black);
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* Widths */
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+/* Container and images sizes */
+.size4 {
+  width: 94px;
+  height: 25px;
+}
+
+.img-size-s {
+  width: 130.69px;
+  height: 43.31px;
+}
+
+.img-size-xxxs {
+  width: 17px;
+  height: 25.02px;
+}
+
+.avatar-container {
+  width: 3rem;
+  height: 3rem;
+  border: 0.9px solid rgba(0, 0, 0, 0.03);
+}
+
+/* Borders and Shadows */
+.rounded-lg {
+  border-radius: 5px;
+}
+
+.shadow-none {
+  box-shadow: none;
+}
+
+.shadow {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-av {
+  box-shadow: 8.44615px 16.8923px rgba(96, 128, 153, 0.1),
+    0px 1.68923px 16.8923px rgba(96, 128, 153, 0.04),
+    0px 0.844615px 3.37846px rgba(96, 128, 153, 0.06);
+}
+
+.border-none {
+  border: 0px;
+}
+
+/* Background colors */
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-blue-descendent {
+  background: var(--blue-gradient);
+}
+
+.bg-lightblue-descendent {
+  background: var(--lightblue-gradient);
+}
+
+/* Buttons properties */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+.position-rel {
+  position: relative;
+}
+
+.top-75 {
+  top: 75%;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.translate-left-50 {
+  transform: translateX(-50%);
+}
