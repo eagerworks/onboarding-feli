@@ -1,0 +1,261 @@
+
+$inline: (
+  "inline": inline,
+);
+
+$block: (
+  "block": block,
+);
+
+$flex: (
+  "flex": flex,
+);
+
+$flex-direction: (
+  "row": row,
+  "col": column,
+  "row-reverse": row-reverse,
+  "column-reverse": column-reverse,
+);
+
+$flex-wrap: (
+  "wrap": wrap,
+  "wrap-reverse": wrap-reverse,
+);
+
+$content-align: (
+  "center": center,
+  "start": start,
+  "between": space-between,
+  "around": space-around,
+);
+
+$justify: (
+  "around": space-around,
+  "between": space-between,
+  "center": center,
+  "start": start,
+);
+
+$items-align: (
+  "center": center,
+  "start": flex-start,
+);
+
+$m-spacings: (
+  "0-5": 0.5rem,
+  "1": 1rem,
+  "1-5": 3.5rem,
+  "2": 6rem,
+  "3": 7rem,
+  "4": 14rem,
+  "5": 22rem,
+  "6": 25rem,
+  "auto": auto,
+);
+
+$p-spacings: (
+  "0-8": 0.8rem,
+  "0-9": 0.9rem,
+  "1": 1rem,
+  "2": 2rem,
+  "3": 3rem,
+  "4": 4rem,
+  "5": 5rem,
+  "6": 6rem,
+  "7": 7rem,
+  "17": 17rem,
+  "20": 20rem,
+);
+
+$gap-spacings: (
+  "1": 1rem,
+  "2": 2rem,
+  "3": 3rem,
+  "4": 4rem,
+  "5": 6rem,
+  "6": 15rem,
+  "7": 20rem,
+);
+
+$text-size: (
+  "xs": 1.0rem,
+  "sm": 1.4rem,
+  "base": 1.6rem,
+  "md": 2.0rem,
+  "lg": 3.0rem,
+  "xl": 35px,
+  "2xl": 4.8rem,
+  "3xl": 6.0rem,
+  "4xl": 7.0rem,
+);
+
+$font-weights: (
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+);
+
+$text-color: (
+  "white":white,
+  "black":black,
+  "blue": #0F58B7,
+  "light-blue": #9BC7FF,
+);
+
+$tracking: (
+  "tighter": -0.05rem,
+  "tight": -0.1rem,
+  "normarl": 0rem,
+);
+
+$leading: (
+  "tight": 108%,
+  "snug": 130%,
+  "normal": 150%,
+);
+
+$text-underline: (
+  "underline": underline,
+  "overline": overline,
+  "line-through": line-through,
+  "no-underline": none,
+);
+
+$w-size: (
+  "0": 0rem,
+  "0.5": 0.7rem,
+  "1": 1.5rem,
+  "2": 3.0rem,
+  "3": 4.0rem,
+  "4": 9.0rem,
+  "5": 9.5rem,
+  "6": 13.0rem,
+  "7": 20.0rem,
+  "8": 22.5rem,
+  "9": 34.5rem,
+  "10": 46.5rem,
+  "11": 58.5rem,
+  "12": 71rem,
+  "13": 95rem,
+  "14": 107.5rem,
+  "15": 120rem,
+  // percentages
+  "30": 30%,
+  "40": 40%,
+  "50": 50%,
+  "55": 55%,
+  "60":60%,
+  "70":70%,
+  "80": 80%,
+  "90": 90%,
+  "95": 95%,
+  "100": 100%,
+);
+
+$h-size: (
+  "0": 0rem,
+  "0-5": 1.3rem,
+  "1": 2.5rem,
+  "2": 3.0rem,
+  "3": 3.6rem,
+  "4": 4.5rem,
+  "5": 7.0rem,
+  "6": 10.4rem,
+  "6-5": 13rem,
+  "7": 19.5rem,
+  "8": 23.0rem,
+  "9": 27.0rem,
+  "10": 32.0rem,
+  "11": 85rem,
+  // percentages
+  "30": 30%,
+  "55": 55%,
+  "60":60%,
+  "70":70%,
+  "80": 80%,
+  "90": 90%,
+);
+
+$rounded: (
+  "none": 0rem,
+  "sm": 0.125rem,
+  "lg": 0.5rem,
+  "xl": 6.6rem,
+  "t": 20px 20px 0px 0px,
+);
+
+$shadow-box: (
+  "none": none,
+  "md": 2px 2px 10px rgba(0, 0, 0, 0.25),
+  "lg": 0px 24px 67px rgba(0, 0, 0, 0.06),
+  "xl": 0px 1.68923px 16.8923px rgba(96, 128, 153, 0.04),
+);
+
+$border: (
+  "none": 0rem,
+  "sm": 0.9px solid rgba(0, 0, 0, 0.03),
+);
+
+$border-top: (
+  "line": 1px solid #1C1C1C,
+  "line2": 2px solid #1C1C1C,
+  "line3": 1px solid #FFFFFF,
+);
+
+$bg-color: (
+  "white":white,
+  "black":black,
+  "light-blue": #F2F7FF,
+  "light-gray": #EEEEEE,
+  "primary-gradient": linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%),
+  "secondary-gradient": linear-gradient(46.77deg, #0F99B7 -0.79%, #69ECDC 131.52%),
+  "blue": #0F58B7,
+  "transparent": transparent,
+);
+
+$list-style: (
+  "none": none,
+);
+
+$text: (
+  "center": center,
+  "left": left,
+);
+
+$position: (
+  "absolute": absolute,
+  "relative": relative,
+);
+
+$top: (
+  "50": 50%,
+  "70": 70%,
+  "75": 75%,
+  "80": 80%,
+);
+
+$left: (
+  "50": 50%,
+  "60": 60%,
+);
+
+$transform: (
+  "X-50": translateX(-50%),
+  "X-10": translateX(-10px),
+);
+
+$cursor-pointer: (
+  "pointer": pointer,
+);
+
+
+$hidden: (
+  "hidden": none,
+);
+
+$overflow: (
+  "auto": auto,
+);
