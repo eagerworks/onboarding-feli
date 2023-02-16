@@ -1,0 +1,461 @@
+$theme-colors: (
+  "primary": blue,
+  "white":white,
+  "black":black,
+  "light-blue": #9BC7FF,
+  "gray": #F2F7FF,
+  "light-gray": #EEEEEE,
+  "blue": #0F58B7,
+  "transparent": transparent,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 0,
+  md: 768px,
+  lg: 1226px,
+  xl: 1226px,
+  xxl: 1226px,
+);
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/root";
+
+// Redefining breakpoints
+
+
+// Adding values to existing proerties
+
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "margin-top": map-merge(
+      map-get($utilities, "margin-top"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "margin-top"), "values"),
+          ("0-5":0.5rem, 1:1rem, "1-5":3.5rem, 2:6rem, 3:7rem, 4:14rem, 5:22rem, 6:25rem),
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "margin-bottom": map-merge(
+      map-get($utilities, "margin-bottom"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "margin-bottom"), "values"),
+          ("0-5":0.5rem, 1:1rem, "1-5":3.5rem, 2:6rem, 3:7rem, 4:14rem, 5:22rem, 6:25rem),
+        ),
+      ),
+    ),
+  )
+);
+
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "margin-start": map-merge(
+      map-get($utilities, "margin-start"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "margin-start"), "values"),
+          (6:7rem),
+        ),
+      ),
+    ),
+  )
+);
+
+$w-size: (
+  "0": 0rem,
+  "0-5": 0.7rem,
+  "1": 1.5rem,
+  "2": 3.0rem,
+  "3": 4.0rem,
+  "4": 9.0rem,
+  "5": 9.5rem,
+  "6": 13.0rem,
+  "7": 20.0rem,
+  "8": 22.5rem,
+  "9": 34.5rem,
+  "10": 46.5rem,
+  "11": 58.5rem,
+  "12": 71rem,
+  "13": 95rem,
+  "14": 107.5rem,
+  "15": 120rem,
+  // percentages
+  "30": 30%,
+  "40": 40%,
+  "55": 55%,
+  "60":60%,
+  "70":70%,
+  "80": 80%,
+  "90": 90%,
+  "95": 95%,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          $w-size,
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "gap": map-merge(
+      map-get($utilities, "gap"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "gap"), "values"),
+          (1: 1rem, 2: 2rem, 3: 3rem, 4: 4rem, 5: 6rem, 6: 15rem, 7: 20rem),
+        ),
+      ),
+    ),
+  )
+);
+
+$rounded: (
+  "none": 0rem,
+  "10": 0.125rem,
+  "11": 0.5rem,
+  "12": 6.6rem,
+  "13": 20px 20px 0px 0px,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "rounded"), "values"),
+          $rounded,
+        ),
+      ),
+    ),
+  )
+);
+
+$h-size: (
+  "0": 0rem,
+  "0-5": 1.3rem,
+  "1": 2.5rem,
+  "2": 3.0rem,
+  "3": 3.6rem,
+  "4": 4.5rem,
+  "5": 7.0rem,
+  "6": 10.4rem,
+  "6-5": 13rem,
+  "7": 19.5rem,
+  "8": 23.0rem,
+  "9": 27.0rem,
+  "10": 32.0rem,
+  "11": 85rem,
+  // percentages
+  "30": 30%,
+  "55": 55%,
+  "60":60%,
+  "70":70%,
+  "80": 80%,
+  "90": 90%,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          $h-size,
+        ),
+      ),
+    ),
+  )
+);
+
+$border-top: (
+  "line": 1px solid #1C1C1C,
+  "line2": 2px solid #1C1C1C,
+  "line3": 1px solid #FFFFFF,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "border-top"), "values"),
+          $border-top,
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "font-weight"), "values"),
+          (medium: 500),
+        ),
+      ),
+    ),
+  )
+);
+
+$text-size: (
+  "10": 1.0rem,
+  "11": 1.4rem,
+  "12": 1.6rem,
+  "13": 2.0rem,
+  "14": 3.0rem,
+  "15": 35px,
+  "16": 4.8rem,
+  "17": 6.0rem,
+  "18": 7.0rem,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      (
+        rfs: false,
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "font-size"), "values"),
+          $text-size,
+        ),
+      ),
+    ),
+  )
+);
+
+$leading: (
+  "xs": 1.08,
+  "md": 1.3,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "line-height": map-merge(
+      map-get($utilities, "line-height"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "line-height"), "values"),
+          $leading,
+        ),
+      ),
+    ),
+  )
+);
+
+
+
+$p-spacings: (
+  "0-8": 0.8rem,
+  "0-9": 0.9rem,
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+  5: 5rem,
+  6: 6rem,
+  7: 7rem,
+  17: 17rem,
+  20: 20rem,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "padding-x": map-merge(
+      map-get($utilities, "padding-x"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "padding-x"), "values"),
+          $p-spacings,
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "padding-y": map-merge(
+      map-get($utilities, "padding-y"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "padding-y"), "values"),
+          $p-spacings,
+        ),
+      ),
+    ),
+  )
+);
+
+$shadow-box: (
+  md: 2px 2px 10px rgba(0, 0, 0, 0.25),
+  lg: 0px 24px 67px rgba(0, 0, 0, 0.06),
+  xl: 0px 1.68923px 16.8923px rgba(96, 128, 153, 0.04),
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "shadow": map-merge(
+      map-get($utilities, "shadow"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "shadow"), "values"),
+          $shadow-box,
+        ),
+      ),
+    ),
+  )
+);
+
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "border"), "values"),
+          ("sm": 0.9px solid rgba(0, 0, 0, 0.03)),
+        ),
+      ),
+    ),
+  )
+);
+
+$top: (
+  70: 70%,
+  75: 75%,
+  80: 80%,
+);
+
+$left: (
+  60: 60%,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "top": map-merge(
+      map-get($utilities, "top"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "top"), "values"),
+          $top,
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "start": map-merge(
+      map-get($utilities, "start"),
+      (
+        responsive:true,
+        values: map-merge(
+          map-get(map-get($utilities, "start"), "values"),
+          $left,
+        ),
+      ),
+    ),
+  )
+);
+
+
+// Adding properties
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "tracking": (
+      property: letter-spacing,
+      class: tracking,
+      responsive: true,
+      values: ("tighter": -0.05rem, "tight": -0.1rem, "normarl": 0rem) ,
+    )
+  )
+);
+
+
+
+
+
+// $text-underline: (
+//   "underline": underline,
+//   "overline": overline,
+//   "line-through": line-through,
+//   "no-underline": none,
+// );
+
+
+
+// $transform: (
+//   "X-50": translateX(-50%),
+//   "X-10": translateX(-10px),
+// );
+
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
