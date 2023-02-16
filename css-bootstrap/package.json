@@ -1,0 +1,18 @@
+{
+  "name": "css-bootstrap",
+  "version": "1.0.0",
+  "description": "css-bootsrap",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/styles.scss styles/css/styles.css -w"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Felipe-Borras",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "bootstrap": "^5.2.3"
+  }
+}
