@@ -1,0 +1,30 @@
+$breakpoints: (
+  "md": 768px,
+  "lg": 1226px,
+);
+
+@mixin define-property ($prefix, $properties, $list) {
+  @each $key, $value in $list {
+    $classname: if($prefix == "", #{$key}, #{$prefix}-#{$key});
+    .#{$classname} {
+      @each $property in $properties {
+        #{$property}: #{$value};
+      }
+    }
+  }
+}
+
+@mixin define-media ($prefix, $properties, $list) {
+  @each $key, $value in $list {
+    $classname: if($prefix == "", #{$key}, #{$prefix}-#{$key});
+    @each $breakpointkey, $breakpointvalue in $breakpoints {
+      @media (min-width: $breakpointvalue) {
+        .#{$breakpointkey}-#{$classname} {
+          @each $property in $properties {
+            #{$property}: #{$value};
+          }
+        }
+      }
+    }
+  }
+}
