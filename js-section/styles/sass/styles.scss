@@ -1,0 +1,254 @@
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #FBFBFB;
+}
+
+.prueba {
+  width: 80vw;
+}
+
+.text-transparent-bgclip {
+  background: linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-img {
+  background-image: url("../assets/images/victoria_img.png");
+}
+
+.bottom-0 {
+  bottom: 0;
+
+}
+
+.text-fill-black {
+  -webkit-text-fill-color: #1C1C1C;
+}
+
+.border-box {
+  transform: translateY(50%);
+  border: 0.9px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 1px 10px rgba(96, 128, 153, 0.1);
+  border-radius: 5px;
+}
+
+.m-inline {
+  margin-inline: auto,
+}
+
+.list-position-inside {
+  list-style-position: inside;
+}
+
+// Slider
+
+.switch {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 21.16px;
+  border-radius: 13px;
+  border: 1px solid rgba(149, 149, 149, 0.3);
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16.21px;
+  width: 16.21px;
+  left: 5.26%;
+  right: 56.14%;
+  top: 7.69%;
+  bottom: 7.69%;
+  background: linear-gradient(46.99deg, #0F58B7 -4.4%, #62D9FF 120.42%);;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16.21px);
+}
+
+.slider.round {
+  border-radius: 13px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+// End slider
+
+.heart {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.heart::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::after {
+  position: absolute;
+  content: "";
+  right: -50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 108%;
+    letter-spacing: -1px;
+    color: white;
+    transform: translateX(-20px),
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+// classes
+@include define-property("", "display", $block);
+@include define-property("", "display", $flex);
+@include define-property ("flex", "flex-direction", $flex-direction);
+@include define-property ("justify", "justify-content", $justify);
+@include define-property ("flex", "flex-wrap", $flex-wrap);
+@include define-property ("items", "align-items", $items-align);
+@include define-property ("mt", "margin-top", $m-spacings);
+@include define-property ("mb", "margin-bottom", $m-spacings);
+@include define-property ("ml", "margin-left", $m-spacings);
+@include define-property ("mx", ("margin-left", "margin-right"), $m-spacings);
+@include define-property ("p", "padding", $p-spacings);
+@include define-property ("py", ("padding-top","padding-bottom"), $p-spacings);
+@include define-property ("px", ("padding-left","padding-right"), $p-spacings);
+@include define-property ("pr", "padding-right", $p-spacings);
+@include define-property ("gap", "gap", $gap-spacings);
+@include define-property ("text", "font-size", $text-size);
+@include define-property ("font", "font-weight", $font-weights);
+@include define-property ("text", "color", $text-color);
+@include define-property ("tracking", "letter-spacing", $tracking);
+@include define-property ("leading", "line-height", $leading);
+@include define-property ("", "text-decoration", $text-underline);
+@include define-property ("w", "width", $w-size);
+@include define-property ("h", "height", $h-size);
+@include define-property ("rounded", "border-radius", $rounded);
+@include define-property ("border-t", "border-top", $border-top);
+@include define-property ("border-r", "border-right", $border-side);
+@include define-property ("border-l", "border-left", $border-side);
+@include define-property ("shadow", "box-shadow", $shadow-box);
+@include define-property ("border", "border", $border);
+@include define-property ("text", "font-size", $text-size);
+@include define-property ("bg", "background", $bg-color);
+@include define-property ("list", "list-style", $list-style);
+@include define-property ("text", "text-align", $text);
+@include define-property ("position", "position", $position);
+@include define-property ("content", "align-content", $content-align);
+@include define-property ("top", "top", $top);
+@include define-property ("bottom", "bottom", $bottom);
+@include define-property ("right", "right", $right);
+@include define-property ("left", "left", $left);
+@include define-property ("transform", "transform", $transform);
+@include define-property ("cursor", "cursor", $cursor-pointer);
+@include define-property("", "display", $hidden);
+@include define-property("overflow-x", "overflow-x", $overflow);
+@include define-property("overflow-y", "overflow-y", $overflow);
+@include define-property("overflow", "overflow", $overflow);
+@include define-property("", "display", $inline-block);
+
+// media queries
+@include define-media("", "display", $block);
+@include define-media("", "display", $flex);
+@include define-media ("flex", "flex-direction", $flex-direction);
+@include define-media ("justify", "justify-content", $justify);
+@include define-media ("flex", "flex-wrap", $flex-wrap);
+@include define-media ("items", "align-items", $items-align);
+@include define-media ("mt", "margin-top", $m-spacings);
+@include define-media ("mb", "margin-bottom", $m-spacings);
+@include define-media ("ml", "margin-left", $m-spacings);
+@include define-media ("mx", ("margin-left", "margin-right"), $m-spacings);
+@include define-media ("p", "padding", $p-spacings);
+@include define-media ("py", ("padding-top","padding-bottom"), $p-spacings);
+@include define-media ("px", ("padding-left","padding-right"), $p-spacings);
+@include define-media ("pr", "padding-right", $p-spacings);
+@include define-media ("gap", "gap", $gap-spacings);
+@include define-media ("text", "font-size", $text-size);
+@include define-media ("font", "font-weight", $font-weights);
+@include define-media ("text", "color", $text-color);
+@include define-media ("tracking", "letter-spacing", $tracking);
+@include define-media ("leading", "line-height", $leading);
+@include define-media ("", "text-decoration", $text-underline);
+@include define-media ("w", "width", $w-size);
+@include define-media ("h", "height", $h-size);
+@include define-media ("rounded", "border-radius", $rounded);
+@include define-media ("border-t", "border-top", $border-top);
+@include define-media ("shadow", "box-shadow", $shadow-box);
+@include define-media ("border", "border", $border);
+@include define-media ("text", "font-size", $text-size);
+@include define-media ("bg", "background", $bg-color);
+@include define-media ("list", "list-style", $list-style);
+@include define-media ("text", "text-align", $text);
+@include define-media ("position", "position", $position);
+@include define-media ("content", "align-content", $content-align);
+@include define-media ("top", "top", $top);
+@include define-media ("bottom", "bottom", $bottom);
+@include define-media ("right", "right", $right);
+@include define-media ("left", "left", $left);
+@include define-media ("transform", "transform", $transform);
+@include define-media ("cursor", "cursor", $cursor-pointer);
+@include define-media("", "display", $hidden);
+@include define-media("overflow-x", "overflow-x", $overflow);
+@include define-media("overflow-y", "overflow-y", $overflow);
+@include define-media("overflow", "overflow", $overflow);
+@include define-media("", "display", $inline-block);
