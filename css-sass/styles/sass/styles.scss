@@ -14,6 +14,7 @@ html {
 body {
   font-family: 'Poppins';
   background-color: #FFFFFF;
+  font-size: 1.6rem;
 }
 
 .text-transparent-bgclip {
@@ -36,6 +37,10 @@ body {
 
 .m-inline {
   margin-inline: auto,
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 input::placeholder {
