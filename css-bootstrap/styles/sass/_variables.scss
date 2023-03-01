@@ -439,23 +439,4 @@ $utilities: map-merge(
   )
 );
 
-
-
-
-
-// $text-underline: (
-//   "underline": underline,
-//   "overline": overline,
-//   "line-through": line-through,
-//   "no-underline": none,
-// );
-
-
-
-// $transform: (
-//   "X-50": translateX(-50%),
-//   "X-10": translateX(-10px),
-// );
-
-
 @import "../../node_modules/bootstrap/scss/utilities/api";
